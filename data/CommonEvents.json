@@ -1,0 +1,23 @@
+[
+null,
+{"id":1,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
+{"id":2,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
+{"id":3,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
+{"id":4,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
+{"id":5,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
+{"id":6,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
+{"id":7,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
+{"id":8,"list":[{"code":355,"indent":0,"parameters":["console.log(args);"]},{"code":0,"indent":0,"parameters":[]}],"name":"Common Event Call","switchId":1,"trigger":0},
+{"id":9,"list":[{"code":117,"indent":0,"parameters":[11]},{"code":121,"indent":0,"parameters":[10,10,0]},{"code":0,"indent":0,"parameters":[]}],"name":"InitGame","switchId":1,"trigger":0},
+{"id":10,"list":[{"code":117,"indent":0,"parameters":[11]},{"code":0,"indent":0,"parameters":[]}],"name":"GameOn","switchId":10,"trigger":2},
+{"id":11,"list":[{"code":122,"indent":0,"parameters":[101,101,0,3,5,-1,0]},{"code":122,"indent":0,"parameters":[102,102,0,3,5,-1,1]},{"code":0,"indent":0,"parameters":[]}],"name":"GetPlayerPosition","switchId":1,"trigger":0},
+{"id":12,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
+{"id":13,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
+{"id":14,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
+{"id":15,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
+{"id":16,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
+{"id":17,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
+{"id":18,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
+{"id":19,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0},
+{"id":20,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0}
+]
