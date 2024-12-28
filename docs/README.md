@@ -1,6 +1,6 @@
 # Welcome to Fight Farm!
 
-An RPG about fighting, farming, and some other stuff.
+An RPG about fighting, farming, and some other stuff. 
 
 ## Credits
 

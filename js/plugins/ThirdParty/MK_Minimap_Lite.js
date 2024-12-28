@@ -391,15 +391,15 @@ MK.Minimap.vocabulary.optionsMenuText   = vocabularyParams.optionsMenuText;
 // Image Manager
 // =====================================================================================
 
-console.log(
-    (
-        "%1: Error messages such as \"File not found\" may appear. " +
-        "They are only relevant when using RPG Maker MV AND you are planning to publish your game as a browser game. " +
-        "In this case, you must ensure that all ressources are available when uploading your game. " +
-        "Otherwise, you can safely ignore the messages. " +
-        "For more info, please visit: https://aerosys.blog/Minimap"
-    ).format(PLUGIN_NAME)
-);
+// console.log(
+//     (
+//         "%1: Error messages such as \"File not found\" may appear. " +
+//         "They are only relevant when using RPG Maker MV AND you are planning to publish your game as a browser game. " +
+//         "In this case, you must ensure that all ressources are available when uploading your game. " +
+//         "Otherwise, you can safely ignore the messages. " +
+//         "For more info, please visit: https://aerosys.blog/Minimap"
+//     ).format(PLUGIN_NAME)
+// );
 
 function MK_ImageManager() {
     throw new Error("This is a static class");
@@ -730,10 +730,11 @@ Sprite_Minimap.prototype.loadSourceBitmaps = function() {
         const bitmap1 = MK_ImageManager.safelyRequestBitmap('img/tilesets/', name);
         bitmapsToLoad.push(bitmap1);
         
-        if (factor > 1) {
-            const bitmap2 = MK_ImageManager.safelyRequestBitmap('img/tilesets_%1x/'.format(factor), name);
-            bitmapsToLoad.push(bitmap2);
-        }
+        // Skip this to avoid the console error
+        // if (factor > 1) {
+        //     const bitmap2 = MK_ImageManager.safelyRequestBitmap('img/tilesets_%1x/'.format(factor), name);
+        //     bitmapsToLoad.push(bitmap2);
+        // }
     });
     bitmapsToLoad
         .filter(Boolean)
@@ -764,14 +765,15 @@ Sprite_Minimap.prototype.organizeSourceBitmaps = function() {
                 const folder1 = 'img/tilesets/';
                 const folder2 = 'img/tilesets_%1x/'.format(factor);
                 const bitmap1 = MK_ImageManager.safelyRequestBitmap(folder1, name);
-                const bitmap2 = MK_ImageManager.safelyRequestBitmap(folder2, name);
+                // const bitmap2 = MK_ImageManager.safelyRequestBitmap(folder2, name);
 
-                if (bitmap2 && bitmap2.isReady() && !bitmap2.isError()) {
-                    this.tilesetBitmaps[index] = bitmap2;
-                } else {
+                // Skip this to avoid the console error
+                // if (bitmap2 && bitmap2.isReady() && !bitmap2.isError()) {
+                //     this.tilesetBitmaps[index] = bitmap2;
+                // } else {
                     this.tilesetBitmaps[index] = this.downscaleBitmap(bitmap1, factor);
                     MK_ImageManager.addBitmapToCache(folder2, name, this.tilesetBitmaps[index]);
-                }
+                // }
             } else {
                 this.tilesetBitmaps[index] = MK_ImageManager.safelyRequestBitmap('img/tilesets/', name);
             }
